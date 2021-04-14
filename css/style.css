@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Roboto-BoldItalic.ttf);
+}
+body{
+    padding: 10px;
+    font-family: myFont, sans-serif;
+}
+header{
+    height: 50vh;
+    background-color: #00203FFF;
+}
+header h4{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 30px;
+}
+header span{
+    color: #ADEFD1FF;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    padding-bottom: 70px;
+}
+.main {
+    height: auto;
+    background-color: #ADEFD1FF;
+}
+.main h5{
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 2px;
+}
+.main .boxes{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.main .boxes .box{
+    width: 420px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+
+}
+footer{
+    background-color: #00203FFF;
+    text-align: center;
+    height: 50vh;
+}
+footer h4{
+    color: white;
+    padding-top: 100px;
+    font-size: 30px;
+}
+footer span{
+    font-size: 15px;
+    display: block;
+    color: white;
+}
+footer .links{
+    padding-top: 40px;
+}
+footer .links a{
+    text-decoration: none;
+    color: #ADEFD1FF;
+    padding: 10px;
+}
+footer .links .fab{
+    padding: 4px;
+}
+footer .links .fas{
+    padding: 4px;
+}
+@media (min-width:280px) and (max-width:720px) {
+    header h4{
+        padding-top: 120px;
+    }
+    footer .links{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .links a{
+        padding: 5px;
+    }
+    .main .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .main .boxes .box{
+        width: 90vw;
+        height: 200px;
+    }
+}
